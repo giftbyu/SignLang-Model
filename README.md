@@ -8,12 +8,18 @@ Repository ini berisi implementasi dan analisis untuk sistem deteksi bahasa isya
 
 ```
 /workspace/
-├── preprocess_landmarks.ipynb          # Preprocessing landmarks dengan MediaPipe
-├── Training_Model_Sign.ipynb           # Training model hybrid (baseline)
-├── ANALISIS_DAN_REKOMENDASI_HYBRID_MODEL.md  # 📖 Analisis lengkap & rekomendasi
-├── advanced_hybrid_model_implementation.py   # 💻 Implementasi siap pakai
-├── INTEGRATION_GUIDE.md                # 🔧 Panduan step-by-step integrasi
-└── README.md                           # 📋 Dokumen ini
+├── preprocess_landmarks.ipynb                    # Preprocessing landmarks (original)
+├── preprocess_landmarks_OPTIMIZED.py             # 🆕 Preprocessing upgraded (+ advanced features)
+├── Training_Model_Sign.ipynb                     # Training model hybrid (baseline)
+├── ANALISIS_DAN_REKOMENDASI_HYBRID_MODEL.md      # 📖 Analisis lengkap & rekomendasi
+├── OPTIMASI_EFFICIENTNETB0_ONLY.md               # 🆕 Optimasi TANPA ganti base model
+├── advanced_hybrid_model_implementation.py       # 💻 Implementasi siap pakai
+├── QUICK_IMPLEMENTATION_EFFICIENTNETB0.py        # 🆕 Quick implementation (EfficientNetB0)
+├── INTEGRATION_GUIDE.md                          # 🔧 Panduan step-by-step integrasi
+├── PREPROCESSING_UPGRADE_GUIDE.md                # 🆕 Panduan upgrade preprocessing
+├── MULAI_DARI_SINI.md                            # 🆕 START HERE! Panduan lengkap
+├── requirements.txt                              # Dependencies
+└── README.md                                     # 📋 Dokumen ini
 ```
 
 ---

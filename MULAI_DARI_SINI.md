@@ -171,6 +171,39 @@ Saya telah membuat 5 dokumen lengkap untuk membantu Anda:
 
 ---
 
+## ❗ PENTING: PREPROCESSING HARUS DIUPGRADE DULU!
+
+**PERHATIAN:** Sebelum training dengan model optimized, Anda **HARUS upgrade preprocessing** terlebih dahulu!
+
+### **Kenapa?**
+- ❌ Preprocessing original hanya ekstrak 126 features (basic landmarks)
+- ✅ Preprocessing upgraded ekstrak 194 features (126 + 68 advanced geometric features)
+- 🎯 Expected gain: +2-3% accuracy
+
+### **Apa yang harus dilakukan?**
+
+**Step 1: Run Preprocessing Baru (30-60 menit)**
+```bash
+File: preprocess_landmarks_OPTIMIZED.py
+```
+- Extract basic landmarks (126 features)
+- Extract advanced geometric features (68 features)
+- Output: 2 files per sample (*_landmarks.npy, *_advanced.npy)
+
+**Step 2: Update Data Loading (15 menit)**
+```bash
+File: PREPROCESSING_UPGRADE_GUIDE.md
+```
+- Update fungsi load data untuk load 2 files
+- Add input untuk advanced features
+
+**Step 3: Baru Training (2-3 jam)**
+- Train dengan model optimized + enhanced features
+
+**Detail lengkap:** Baca `PREPROCESSING_UPGRADE_GUIDE.md`
+
+---
+
 ## 🎯 REKOMENDASI: MULAI DARI MANA?
 
 ### **Scenario 1: Saya Ingin Memahami Dulu** 🎓
