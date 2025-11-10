@@ -183,12 +183,17 @@ Saya telah membuat 5 dokumen lengkap untuk membantu Anda:
 ### **Apa yang harus dilakukan?**
 
 **Step 1: Run Preprocessing Baru (30-60 menit)**
-```bash
-File: preprocess_landmarks_OPTIMIZED.py
-```
+
+**Pilih salah satu:**
+- 📓 **Notebook format**: `preprocess_landmarks_UPDATED_NOTEBOOK.md` (recommended untuk pemula)
+- 📄 **Single script**: `preprocess_landmarks_COMPLETE.py` (untuk advanced user)
+
+**Output:**
 - Extract basic landmarks (126 features)
 - Extract advanced geometric features (68 features)
-- Output: 2 files per sample (*_landmarks.npy, *_advanced.npy)
+- 2 files per sample (*_landmarks.npy, *_advanced.npy)
+
+**Panduan lengkap:** `CARA_MENGGUNAKAN_PREPROCESSING_BARU.md`
 
 **Step 2: Update Data Loading (15 menit)**
 ```bash
