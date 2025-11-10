@@ -1,0 +1,96 @@
+# ============================================================
+# REQUIREMENTS FOR SIGN LANGUAGE HYBRID MODEL
+# ============================================================
+# 
+# Installation:
+#   pip install -r requirements.txt
+#
+# Note: Untuk Google Colab, beberapa package sudah pre-installed
+# ============================================================
+
+# === CORE DEPENDENCIES ===
+tensorflow>=2.14.0,<2.16.0
+mediapipe>=0.10.21
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+numpy>=1.24.0,<2.0.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tqdm>=4.65.0
+
+# === DATA PROCESSING ===
+pandas>=2.0.0
+pillow>=10.0.0
+
+# === TRAINING & MONITORING ===
+tensorboard>=2.14.0
+
+# === OPTIONAL: UNTUK NLP INTEGRATION (OPSI C) ===
+# Uncomment jika ingin implementasi NLP features
+
+# transformers>=4.30.0        # Hugging Face untuk BERT, ViT, etc.
+# sentencepiece>=0.1.99       # Tokenization untuk text
+# sacrebleu>=2.3.0            # Evaluation metric untuk translation
+# tokenizers>=0.13.0          # Fast tokenization
+
+# === OPTIONAL: UNTUK GRAPH NEURAL NETWORKS ===
+# Uncomment jika ingin implementasi GCN untuk landmarks
+
+# spektral>=1.3.0             # Graph Neural Networks di Keras
+# scipy>=1.10.0               # Untuk sparse matrices
+
+# === OPTIONAL: UNTUK CLIP INTEGRATION ===
+# Uncomment jika ingin implementasi CLIP-style contrastive learning
+
+# clip-by-openai>=1.0         # OpenAI CLIP
+# ftfy>=6.1.0                 # Text cleaning untuk CLIP
+# regex>=2023.0.0             # Pattern matching
+
+# === OPTIONAL: UNTUK EXPERIMENT TRACKING ===
+# Uncomment jika ingin tracking experiments
+
+# wandb>=0.15.0               # Weights & Biases
+# mlflow>=2.5.0               # MLflow tracking
+
+# === DEVELOPMENT TOOLS ===
+# Uncomment untuk development
+
+# jupyter>=1.0.0              # Jupyter notebook
+# ipywidgets>=8.0.0           # Interactive widgets
+# black>=23.0.0               # Code formatting
+# pytest>=7.4.0               # Testing
+
+# ============================================================
+# PLATFORM-SPECIFIC NOTES
+# ============================================================
+#
+# Google Colab:
+#   - TensorFlow, NumPy, Matplotlib sudah pre-installed
+#   - MediaPipe perlu install manual
+#   - GPU sudah available by default
+#
+# Local (CPU):
+#   - Install semua dependencies di atas
+#   - Training akan lebih lambat tanpa GPU
+#
+# Local (GPU - CUDA):
+#   - Install tensorflow-gpu==2.14.0
+#   - Install CUDA 11.8 dan cuDNN 8.6
+#   - Set environment variable LD_LIBRARY_PATH
+#
+# ============================================================
+# INSTALLATION EXAMPLES
+# ============================================================
+#
+# Minimal (untuk inference saja):
+#   pip install tensorflow mediapipe opencv-python numpy
+#
+# Standard (untuk training):
+#   pip install -r requirements.txt
+#
+# Full (dengan semua optional dependencies):
+#   Uncomment optional sections dan:
+#   pip install -r requirements.txt
+#
+# ============================================================
